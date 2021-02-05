@@ -1,7 +1,9 @@
 <template>
   <div id="app" class="container">
-    <Cabecera tituloApp="Esta es mi aplicacion" />
-    <ListaPelicula />
+    <div class="row">
+      <Cabecera tituloApp="Esta es mi aplicacion" :integrantes="['Mi nombre aquí', 'Otro nombre aquí']" />
+      <ListaPelicula />
+    </div>
   </div>
 </template>
 
@@ -14,7 +16,7 @@ export default {
   components: {
     Cabecera,
     ListaPelicula
-  }
+  },
 }
 </script>
 

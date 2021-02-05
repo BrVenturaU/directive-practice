@@ -1,7 +1,8 @@
 <template>
-    <div class="text-center">
+    <div class="col-12 text-center">
         <img alt="Vue logo" src="@/assets/logo.png">
-        <h1>{{tituloApp}}</h1>
+        <h1 v-text="tituloApp"></h1>
+        <div v-html="integrantesHtml" class="mb-4"></div>
     </div>
 </template>
 
@@ -9,8 +10,21 @@
 export default {
     name: 'Cabecera',
     props:{
-        tituloApp: String
-    }
+        tituloApp: String,
+        integrantes: Array
+    },
+    data() {
+        return {
+            
+        }
+    },
+    computed: {
+        integrantesHtml(){
+            return /*html*/ `
+                <h2><i>${this.integrantes.join(' - ')}</i></h2>
+            `
+        }
+    },
 }
 </script>
 

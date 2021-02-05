@@ -15,7 +15,7 @@ Vue.config.productionTip = false
 
 Vue.directive('format', {
   bind(el, binding){
-    el.style.textTransform = binding.value;
+    el.style.textTransform = binding.value.toLowerCase();
   }
 });
 

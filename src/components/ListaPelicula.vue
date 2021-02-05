@@ -3,7 +3,7 @@
         <!-- Es una lista con BootstrapVue pero el mapeo al documento final son solo divs (no semánticos) -->
         <b-list-group>
             <b-list-group-item class="mx-auto d-flex justify-content-between align-items-center" active>
-                <h3>Lista de peliculas</h3>
+                <h3 v-format="'uppercase'">Lista de peliculas</h3>
             </b-list-group-item>
             <b-list-group-item v-for="(pelicula, indice) of peliculas" v-bind:key="pelicula.id" 
                 @click="aumentarVistas(indice)"

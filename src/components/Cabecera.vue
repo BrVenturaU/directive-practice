@@ -1,8 +1,8 @@
 <template>
     <div class="col-12 text-center">
-        <img alt="Vue logo" src="@/assets/logo.png">
+        <img alt="Vue logo" src="@/assets/logo-cinema.png" class="mb-5">
         <h1 v-text="tituloApp"></h1>
-        <div v-html="integrantesHtml" class="mb-4"></div>
+        <div v-html="integrantesHtml" class="mb-5"></div>
     </div>
 </template>
 
